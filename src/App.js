@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import About from "./pages/About";
 import Counter from "./app/features/Counter";
+import Footer from "./feature/Footer";
 import Home from "./pages/Home";
 import { Provider } from "react-redux";
 import User from "./components/User";
@@ -61,6 +62,7 @@ function App() {
     // </BrowserRouter>
     <Provider store={store}>
       <Counter/>
+    <Footer/>
     </Provider>
   );
 }
